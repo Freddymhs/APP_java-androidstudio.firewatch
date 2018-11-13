@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:screenOrientation="portrait"
+
     android:background="#FFFF"
     android:orientation="vertical"
     tools:context=".Activity_Home_">
@@ -48,7 +48,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    app:srcCompat="@mipmap/ic_launcher_round" />
+                    app:srcCompat="@drawable/baseline_bluetooth_black_18dp" />
 
                 <ImageView
                     android:id="@+id/imageVieefww2313"
@@ -56,14 +56,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    app:srcCompat="@mipmap/ic_launcher_round" />
+                    app:srcCompat="@drawable/baseline_battery_80_black_18dp" />
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/img_bateria" />
+                    app:srcCompat="@drawable/baseline_sync_black_18dp" />
             </LinearLayout>
 
             <LinearLayout
