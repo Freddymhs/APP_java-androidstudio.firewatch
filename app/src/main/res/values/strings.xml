@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FirewatchDesarrollo</string>
+    <string name="access_token">pk.eyJ1IjoiaHlsaWFuIiwiYSI6ImNqb2U4NzdydzJ3MjQza3BibWk5MXpzNTMifQ.pb6lUsYaJCvGMq_7xOfJWQ</string>
+
 </resources>

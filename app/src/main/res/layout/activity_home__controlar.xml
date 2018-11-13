@@ -1,16 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+
     tools:context=".HOME_Controlar">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CONTROLAR">
+        android:layout_height="0dp"
+        android:layout_margin="18dp"
+        android:layout_weight="4"
 
-    </TextView>
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="18dp"
+            android:layout_weight="6"
+            android:background="@color/colorAccent">
+            <!--MAPA-->
+
+            <com.mapbox.mapboxsdk.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                mapbox:mapbox_cameraTargetLat="-32.747147"
+                mapbox:mapbox_cameraTargetLng="-70.726204"
+                mapbox:mapbox_cameraZoom="11"
+                mapbox:mapbox_styleUrl="mapbox://styles/hylian/cjof33dw932zc2sp5w9ckszqj" />
+            <!--FIN MAPA LAYOUT-->
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="18dp"
+            android:layout_weight="2"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </Button>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </Space>
+
 </LinearLayout>
+
+
