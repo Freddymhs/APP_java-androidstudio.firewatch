@@ -1,5 +1,7 @@
 package com.example.hyliann.firewatchdesarrollo;
 
+import android.content.pm.ActivityInfo;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -11,13 +13,16 @@ public class HOME_Controlar extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);/// orientacion fija
+        setTitle("CONTROLAR");
+        setTitleColor(Color.BLACK);
         super.onCreate(savedInstanceState);
         //MAPA
         Mapbox.getInstance(this, getString(R.string.access_token));//
         //MAPA
         setContentView(R.layout.activity_home__controlar);//
 
-        //mapa aun
+        //mapa aun....
         mapView = (MapView) findViewById(R.id.mapView);//
         mapView.onCreate(savedInstanceState);//
         //MAPA

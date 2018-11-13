@@ -1,15 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:background="@color/colorfondo"
     android:orientation="vertical"
-    tools:context=".HOME_Seguimiento">
+    tools:context=".HOME_Controlar">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SEGUIMIENTO"></TextView>
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:background="@color/colorseccion"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+                <!--MAPA-->
+
+                <com.mapbox.mapboxsdk.maps.MapView
+                    android:id="@+id/mapView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    mapbox:mapbox_cameraTargetLat="-32.747147"
+                    mapbox:mapbox_cameraTargetLng="-70.726204"
+                    mapbox:mapbox_cameraZoom="13"
+                    mapbox:mapbox_styleUrl="mapbox://styles/hylian/cjof33dw932zc2sp5w9ckszqj" />
+                <!--FIN MAPA LAYOUT-->
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_weight="2"
+                android:background="@color/colorseccion"
+                android:orientation="horizontal"
+                android:paddingTop="17dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.6"
+                    android:background="@color/colorseccion"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+
+                        android:layout_weight="1"
+                        android:text="MOSTRAR TODAS LAS RUTAS">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="MOSTRAR LAS RUTAS ASIGNADAS">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="MOSTRAR RUTAS DESIGNADAS">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="MOSTRAR RUTAS INACCESIBLES">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorseccion"
+                    android:orientation="vertical">
+
+
+                    <Switch
+                        android:id="@+id/switch1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <Switch
+                        android:id="@+id/switch2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <Switch
+                        android:id="@+id/switch3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <Switch
+                        android:id="@+id/switch4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="0.6"
+        android:background="@color/colorfondo"
+        android:backgroundTint="@color/colorseccion">
+
+        <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+
+        <!--android:layout_height="match_parent">-->
+
+        <!--</ListView>-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="BOTON PARA  MOSTRAR O EXTENDER UNA PNATALLA"
+            android:textAlignment="center"
+            android:textAllCaps="true">
+
+        </TextView>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"></Space>
 
 </LinearLayout>
+
+

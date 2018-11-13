@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:screenOrientation="portrait"
     android:background="@color/colorfondo"
     android:orientation="vertical"
     tools:context=".HOME_Controlar">
@@ -23,10 +24,9 @@
             android:orientation="vertical">
 
             <LinearLayout
-
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="8">
+                android:layout_weight="4">
                 <!--MAPA-->
 
                 <com.mapbox.mapboxsdk.maps.MapView
@@ -43,6 +43,7 @@
 
             <LinearLayout
 
+                android:paddingTop="17dp"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginLeft="7dp"

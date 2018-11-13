@@ -1,12 +1,16 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#FFFF</item>
         <item name="colorPrimaryDark">#00BCD4</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+
+
     </style>
+
     <!--efectos actividades-->
     <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
         <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
@@ -14,4 +18,9 @@
         <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
         <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
     </style>
+
+    <!--//titulo-->
+
+<!--fin titul-->
 </resources>
+

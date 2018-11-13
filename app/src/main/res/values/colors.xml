@@ -13,4 +13,10 @@
     <color name="mapboxBlue">#4264fb</color>
     <color name="mapboxGraylight">#c6d2e1</color>
     <!--fin mapbox-->
+
+    <!--//titulo-->
+<color name="title_color">#000000</color>
+    <!--fin titulo-->
 </resources>
+
+
