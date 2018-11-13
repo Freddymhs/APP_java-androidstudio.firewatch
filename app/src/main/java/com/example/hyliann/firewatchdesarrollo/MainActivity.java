@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
 //        requestWindowFeature(Window.FEATURE_NO_TITLE); //remove App Title bar
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
 
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

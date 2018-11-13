@@ -5,7 +5,7 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorfondo">#E4E4E4</color>
     <color name="colorseccion">#FFFFFF</color>
-    <color name="colorboton">#00BCD5</color>
+    <color name="colorboton">#03DAC5</color>
     <!--arreglado-->
 
     <!--//mapbox-->
@@ -17,6 +17,15 @@
     <!--//titulo-->
 <color name="title_color">#000000</color>
     <!--fin titulo-->
+
+
+    <!--maquetar-->
+    <color name="col1">#04329C</color>
+    <color name="col2">#640264</color>
+    <color name="col3">#FC9A04</color>
+    <color name="col4">#9C0264</color>
+    <!--//fin maquetar-->
 </resources>
+
 
 

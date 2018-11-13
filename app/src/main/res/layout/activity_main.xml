@@ -3,31 +3,163 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorfondo"
-    android:orientation="vertical"
 
+    android:layout_height="match_parent"
+
+    android:layout_gravity="center"
+    android:background="@color/colorseccion"
+    android:orientation="vertical"
     android:screenOrientation="portrait"
     tools:context=".MainActivity">
     <!--inicio-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.9"
+        android:layout_weight="0.3"
         android:background="@color/colorseccion">
 
-        <ImageView
-            android:id="@+id/iv_icon"
-            android:layout_width="match_parent"
+
+    </LinearLayout>
+    <!--//principal  ALTO-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorseccion">
 
-            android:layout_gravity="center"
-            android:adjustViewBounds="true"
-            android:background="@drawable/logo1"
-            android:cropToPadding="true"
-            android:visibility="visible" />
+        </LinearLayout>
+        <!--//principal  ANCHO-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:background="@color/colorseccion"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/colorseccion"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <!--logo-->
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></android.support.v4.widget.Space>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="123"
+                                        android:background="@drawable/logo1">
+
+                </ImageView>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></android.support.v4.widget.Space>
 
 
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.33"></android.support.v4.widget.Space>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <!--list view-->
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></android.support.v4.widget.Space>
+
+                <TextView
+                    android:id="@+id/tv_dispositivos"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="34"
+                    android:background="@color/colorfondo"
+                    android:text="Dispositivos Sincronizados:"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:visibility="visible" />
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></android.support.v4.widget.Space>
+
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.044"></android.support.v4.widget.Space>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+                <!--boton-->
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></android.support.v4.widget.Space>
+
+                <Button
+
+                    android:id="@+id/bt_sincronizar"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@color/colorboton"
+                    android:drawableRight="@android:drawable/stat_sys_data_bluetooth"
+                    android:fontFamily="@font/raleway_black"
+
+                    android:gravity="top|bottom|center_vertical|center_horizontal|center|clip_vertical|clip_horizontal"
+                    android:onClick="irHOME"
+                    android:orientation="horizontal"
+                    android:text="SINCRONIZAR"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="@color/colorseccion"
+                    android:visibility="visible" />
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></android.support.v4.widget.Space>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorseccion">
+
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -35,60 +167,6 @@
         android:layout_height="0dp"
         android:layout_weight="0.4"
         android:background="@color/colorseccion">
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.2">
-
-        <TextView
-            android:id="@+id/tv_dispositivos"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/colorseccion"
-            android:text="Dispositivos Sincronizados:"
-            android:textAlignment="center"
-
-            android:textAllCaps="true" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <ListView
-            android:id="@+id/lv_dispositivos"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/colorseccion"></ListView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@color/colorseccion">
-
-        <Button
-
-            android:id="@+id/bt_sincronizar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="16dp"
-
-            android:background="@color/colorboton"
-            android:drawableRight="@android:drawable/stat_sys_data_bluetooth"
-
-            android:gravity="top|bottom|center_vertical|center_horizontal|center|clip_vertical|clip_horizontal"
-            android:onClick="irHOME"
-            android:text="Sincronizar"
-            android:textAppearance="@style/TextAppearance.AppCompat"
-            android:visibility="visible" />
-        <!--creo esta bien agregar lib APP alt enter-->
-
 
     </LinearLayout>
 

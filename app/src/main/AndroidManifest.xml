@@ -18,8 +18,11 @@
         <activity android:name=".HOME_Seguimiento" />
         <activity android:name=".HOME_Controlar" />
         <activity android:name=".HOME_Monitorizar" />
-        <activity android:name=".SplashActivity">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <!--clase principal al ejecutarse,launcher-->
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
