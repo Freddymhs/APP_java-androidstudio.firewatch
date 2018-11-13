@@ -15,8 +15,6 @@ public class HOME_Controlar extends AppCompatActivity {
         //MAPA
         Mapbox.getInstance(this, getString(R.string.access_token));//
         //MAPA
-
-
         setContentView(R.layout.activity_home__controlar);//
 
         //mapa aun
@@ -27,7 +25,6 @@ public class HOME_Controlar extends AppCompatActivity {
     }
 
     //////metodos para el mapa
-
     @Override
     protected void onStart() {
         super.onStart();

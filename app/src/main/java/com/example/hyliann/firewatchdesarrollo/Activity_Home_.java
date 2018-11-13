@@ -1,12 +1,18 @@
 package com.example.hyliann.firewatchdesarrollo;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.support.design.widget.AppBarLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.widget.Toolbar;
 
 public class Activity_Home_ extends AppCompatActivity {
     //deslizar
@@ -16,12 +22,14 @@ public class Activity_Home_ extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //
+//        ActionBar bar = getActionBar();
+      
+        //
         setContentView(R.layout.activity__home_);
-
         String nombreDispositivo = ""; //               name
         setTitle("Dispositivo #" + nombreDispositivo);// name
     }
-
 
     @Override//Barra
     public boolean onCreateOptionsMenu(Menu menu) { //0
@@ -58,10 +66,11 @@ public class Activity_Home_ extends AppCompatActivity {
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);// mov  animacion
     }
+
     public void DOWN(View view) {/// PANTALLA  SEGUIMIENTO
         Intent intent = new Intent(this, HOME_Monitorizar.class);
         startActivity(intent);
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);// mov  animacion
+        overridePendingTransition(R.anim.slide_out_left, R.anim.slide_out_right);// mov  animacion
     }
 
 }

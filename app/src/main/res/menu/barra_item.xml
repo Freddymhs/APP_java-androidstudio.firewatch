@@ -5,11 +5,12 @@
 
     <item
         android:id="@+id/item_home"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/baseline_home_black_24dp"
         android:title="HOME"
         app:showAsAction="always"></item>
     <item
         android:id="@+id/item_Opciones"
+        android:icon="@drawable/baseline_menu_black_24dp"
         android:title=":"
         app:showAsAction="always"></item>
 

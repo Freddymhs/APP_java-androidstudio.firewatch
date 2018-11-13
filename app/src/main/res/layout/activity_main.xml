@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E4E4E4"
+    android:background="@color/colorfondo"
+
     android:orientation="vertical"
     tools:context=".MainActivity">
     <!--inicio-->
@@ -12,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1.8"
-        android:background="#FFFF">
+        android:background="@color/colorseccion">
 
         <ImageView
             android:id="@+id/iv_icon"
@@ -32,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.4"
-        android:background="#FFFF">
+        android:background="@color/colorseccion">
 
 
     </LinearLayout>
@@ -47,7 +48,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#FFFF"
+            android:background="@color/colorseccion"
+
 
             android:text="Dispositivos Sincronizados:"
             android:textAlignment="center"
@@ -65,7 +67,7 @@
             android:id="@+id/lv_dispositivos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FFFF">
+            android:background="@color/colorseccion">
 
         </ListView>
 
@@ -75,14 +77,16 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#FFFF">
+        android:background="@color/colorseccion">
 
         <Button
+
             android:id="@+id/bt_sincronizar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="16dp"
 
-            android:background="#6FCBD5"
+            android:background="@color/colorboton"
             android:drawableRight="@android:drawable/stat_sys_data_bluetooth"
 
             android:gravity="top|bottom|center_vertical|center_horizontal|center|clip_vertical|clip_horizontal"
