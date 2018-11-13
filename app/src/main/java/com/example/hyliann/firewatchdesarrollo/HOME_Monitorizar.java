@@ -4,7 +4,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -18,7 +23,9 @@ public class HOME_Monitorizar extends AppCompatActivity {
     RecyclerView rv_humo;
     RecyclerView rv_humedad;
     RecyclerView rv_temperatura;
-
+    Toolbar toolbar;
+    Toolbar toolbar_buscar;
+    HumoAdapter humoAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,11 +33,33 @@ public class HOME_Monitorizar extends AppCompatActivity {
         SetListHumo();
         SetListHumedad();
         SetListTemperatura();
-
+        //toolbar= (Toolbar) findViewById(R.id.toolbar);//BUG CRASH APP!!!!!!!!!!!!!!
+        //setSupportActionBar(toolbar);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        //toolbar_buscar= (Toolbar) findViewById(R.id.toolbar_buscar);
+        MenuInflater inflater = getMenuInflater();
+        getMenuInflater().inflate(R.menu.buscar_item,menu);//set_xml
+        //toolbar_buscar.inflateMenu(R.menu.buscar_item);
+        MenuItem menuItem=menu.findItem(R.id.item_buscar);//get desde xml
+        SearchView searchView= (SearchView) menuItem.getActionView();
+        searchView.setQueryHint("Buscar");
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {//agregar get busqeda al aceptar
+                Toast.makeText(getApplicationContext(), "Buscando...",Toast.LENGTH_SHORT).show();
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {//Agregar logica de busqeda al escribir
+                Toast.makeText(getApplicationContext(), newText,Toast.LENGTH_SHORT).show();
+                return true;
+            }
+        });
+
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -46,7 +75,7 @@ public class HOME_Monitorizar extends AppCompatActivity {
         rv_humo= (RecyclerView) findViewById(R.id.rv_humo);
         rv_humo.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
         sectores=AgregarSectores();
-        HumoAdapter humoAdapter=new HumoAdapter(sectores);
+        humoAdapter=new HumoAdapter(sectores);
         rv_humo.setAdapter(humoAdapter);
     }
 
