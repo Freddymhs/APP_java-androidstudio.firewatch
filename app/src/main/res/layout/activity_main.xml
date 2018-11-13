@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E4E4"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--inicio-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:background="#FFFF">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@drawable/logo1"
+            android:cropToPadding="true"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:background="#FFFF">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:id="@+id/tv_dispositivos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFF"
+
+            android:text="Dispositivos Sincronizados:"
+            android:textAlignment="center"
+
+            android:textAllCaps="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/lv_dispositivos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFF">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFF">
+
+        <Button
+            android:id="@+id/bt_sincronizar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#6FCBD5"
+            android:drawableRight="@android:drawable/stat_sys_data_bluetooth"
+
+            android:gravity="top|bottom|center_vertical|center_horizontal|center|clip_vertical|clip_horizontal"
+            android:onClick="irHOME"
+            android:text="Sincronizar"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:visibility="visible" />
+        <!--creo esta bien agregar lib APP alt enter-->
+
+
+    </LinearLayout>
+
+
+    <!--fin-->
+</LinearLayout>
