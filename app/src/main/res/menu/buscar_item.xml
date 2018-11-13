@@ -5,20 +5,20 @@
 
     <item
         android:id="@+id/item_home"
-        android:icon="@drawable/baseline_home_black_24dp"
+        android:icon="@drawable/twotone_home_black_18dp"
         android:title="HOME"
         app:showAsAction="always"></item>
 
     <item
         android:id="@+id/item_buscar"
-        android:icon="@android:drawable/ic_menu_search"
+        android:icon="@drawable/twotone_youtube_searched_for_black_18dp"
         android:title="Buscar"
         app:actionViewClass="android.support.v7.widget.SearchView"
         app:showAsAction="always|collapseActionView" />
 
     <item
         android:id="@+id/item_Opciones"
-        android:icon="@drawable/baseline_menu_black_24dp"
+        android:icon="@drawable/twotone_horizontal_split_black_18dp"
         android:title=":"
         app:showAsAction="always"></item>
 </menu>

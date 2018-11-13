@@ -5,12 +5,14 @@
 
     <item
         android:id="@+id/item_home"
-        android:icon="@drawable/baseline_home_black_24dp"
+
+        android:icon="@drawable/twotone_home_black_18dp"
         android:title="HOME"
         app:showAsAction="always"></item>
     <item
         android:id="@+id/item_Opciones"
-        android:icon="@drawable/baseline_menu_black_24dp"
+
+        android:icon="@drawable/twotone_horizontal_split_black_18dp"
         android:title=":"
         app:showAsAction="always"></item>
 
