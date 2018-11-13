@@ -8,6 +8,14 @@
     android:orientation="vertical"
     tools:context=".HOME_Monitorizar">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_buscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        ></android.support.v7.widget.Toolbar>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
