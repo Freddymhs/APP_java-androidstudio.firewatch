@@ -19,7 +19,7 @@ import android.widget.Toolbar;
 public class Activity_Home_ extends AppCompatActivity {
     //deslizar
     ///opciones d ebotones
-    ///bateria
+    ///bateriaa
     //menu de home
     String mipantalla;
 
