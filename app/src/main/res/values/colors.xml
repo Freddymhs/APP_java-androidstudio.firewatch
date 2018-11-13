@@ -4,9 +4,9 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorfondo">#FFFF</color>
-    <color name="colorseccion">##E4E4E4</color>
+    <color name="colorseccion">#E4E4E4</color>
     <color name="colorboton">#00BCD5</color>
-
+    <!--arreglado-->
 
     <!--//mapbox-->
     <color name="mapboxWhite">#ffff</color>
