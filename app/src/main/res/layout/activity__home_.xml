@@ -3,216 +3,327 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-
     android:layout_height="match_parent"
-
+    android:layout_gravity="center"
     android:background="@color/colorfondo"
     android:orientation="vertical"
+    android:screenOrientation="portrait"
     tools:context=".Activity_Home_">
-
-
-    <!--//barra padre y toolbar-->
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/toolbar_main2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"></android.support.design.widget.AppBarLayout>
-
-    <android.support.design.widget.CollapsingToolbarLayout
-        android:id="@+id/toolbar_main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </android.support.design.widget.CollapsingToolbarLayout>
-    <!--fin barra padre y toolaba.-->
+    <!--inicio-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:background="@color/col1">
+
+
+    </LinearLayout>
+    <!--//principal  ALTO-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="5"
-            android:orientation="horizontal">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorseccion">
 
+        </LinearLayout>
+        <!--//principal  ANCHO-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:background="@color/colorseccion"
+            android:orientation="vertical">
+            <!--control-->
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
                 android:orientation="vertical">
 
-
-                <ImageView
-                    android:id="@+id/imageVie2312ww3"
-
+                <!--K-->
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/twotone_battery_90_black_18dp" />
+                    android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/imageVieefww2313"
 
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        app:srcCompat="@drawable/imagenuserphone">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="Nombre Dispositivo:"></TextView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="--"></TextView>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--Z-->
+                <!--K-->
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/twotone_battery_80_black_18dp" />
+                    android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/imageView"
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        app:srcCompat="@drawable/imagenbateria">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="Energia del Dispostivo: "></TextView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="1231231"></TextView>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--Z-->
+                <!--K-->
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/twotone_sync_black_18dp" />
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+
+                        app:srcCompat="@drawable/imgsensores">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="Cantidad de Sensores: ">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="Tipos de Sensores: "></TextView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="Sensores con Problemas: "></TextView>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--Z-->
+
+
             </LinearLayout>
+            <!--fin sec 1-->
+            <!--seccion2-->
 
+            <!--contro2-->
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2.7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.6"
+                android:orientation="horizontal">
+                <!--list view-->
+
+
+            </LinearLayout>
+            <!--contro3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.6"
                 android:orientation="vertical">
+                <!--boton-->
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:layout_weight="1.6"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="..:">
+                    <Button
+                        android:id="@+id/bt_controlar"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/colorboton"
+                        android:fontFamily="@font/raleway_black"
+                        android:onClick="RIGHT"
+                        android:text="CONTROLAR">
 
-                    </TextView>
+                    </Button>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text=". .:">
+                    <android.support.v4.widget.Space
 
-                    </TextView>
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text=". .:">
+                    </android.support.v4.widget.Space>
 
-                    </TextView>
+                    <Button
+                        android:id="@+id/bt_seguimiento"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/colorboton"
+                        android:fontFamily="@font/raleway_black"
+                        android:onClick="LEFT"
+                        android:text="SEGUIMIENTO">
+
+                    </Button>
 
                 </LinearLayout>
 
-                <LinearLayout
+                <Button
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="---:">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="- -:">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="- -----:">
-
-                    </TextView>
-
-                </LinearLayout>
+                    android:layout_weight="0.1"></Button>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:layout_weight="1.6"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="DAtos de la bateria:">
+                    <android.support.v4.widget.Space
 
-                    </TextView>
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.07">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Energia actual:">
+                    </android.support.v4.widget.Space>
 
-                    </TextView>
+                    <Button
+                        android:id="@+id/bt_monitorizar"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorboton"
+                        android:fontFamily="@font/raleway_black"
+                        android:onClick="DOWN"
+                        android:text="MONITORIZAR">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Tiempo restante:">
+                    </Button>
 
-                    </TextView>
+                    <android.support.v4.widget.Space
 
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.07">
+
+                    </android.support.v4.widget.Space>
                 </LinearLayout>
 
             </LinearLayout>
-
-
-        </LinearLayout>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"></Space>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2.3">
-
-            <Button
-                android:id="@+id/bt_controlar"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-               android:background="@color/colorboton"
-                android:onClick="RIGHT"
-                android:text="Controlar " />
-
-            <Button
-                android:id="@+id/bt_seguimiento"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorboton"
-                android:onClick="LEFT"
-                android:text="Seguimiento" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1.5">
 
-
-            <Button
-                android:id="@+id/bt_monitorizar"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorboton"
-                android:onClick="DOWN"
-                android:text="Monitorizar" />
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorseccion">
 
         </LinearLayout>
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3333"
+        android:background="@color/colorseccion">
 
     </LinearLayout>
 
 
+    <!--fin-->
 </LinearLayout>

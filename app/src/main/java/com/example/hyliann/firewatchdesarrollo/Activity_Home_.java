@@ -81,7 +81,7 @@ public class Activity_Home_ extends AppCompatActivity {
     public void DOWN(View view) {/// PANTALLA  SEGUIMIENTO
         Intent intent = new Intent(this, HOME_Monitorizar.class);
         startActivity(intent);
-        overridePendingTransition(R.anim.slide_out_left, R.anim.slide_out_right);// mov  animacion
+//        overridePendingTransition(R.anim.slide_out_left, R.anim.slide_out_right);// mov  animacion
     }
 
 }
