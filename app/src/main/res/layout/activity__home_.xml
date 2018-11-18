@@ -61,7 +61,15 @@
                         app:srcCompat="@drawable/imagenuserphone">
 
                     </ImageView>
+                    <android.support.v4.widget.Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
 
+
+
+                    </android.support.v4.widget.Space>
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -78,13 +86,15 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:text="Nombre Dispositivo:"></TextView>
+                                android:fontFamily="@font/raleway_black"
+                                android:text="Estas vinculado a "></TextView>
 
                             <TextView
+                                android:id="@+id/tv_NombredeDdispositivo"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:text="--"></TextView>
+                                android:text="---------------"></TextView>
 
 
                         </LinearLayout>
@@ -92,6 +102,25 @@
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.8"
+                            android:text=""></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text=""></TextView>
+                    </LinearLayout>
                 </LinearLayout>
                 <!--Z-->
                 <!--K-->
@@ -109,7 +138,15 @@
                         app:srcCompat="@drawable/imagenbateria">
 
                     </ImageView>
+                    <android.support.v4.widget.Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
 
+
+
+                    </android.support.v4.widget.Space>
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -126,20 +163,54 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:text="Energia del Dispostivo: "></TextView>
+                                android:fontFamily="@font/raleway_black"
+                                android:text="Energia del Dispostivo "></TextView>
 
                             <TextView
+
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:text="1231231"></TextView>
+                                android:text="Nivel de la Bateria:"></TextView>
 
+                            <TextView
+                                android:id="@+id/tv_qwertyNOUSADO"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text=""></TextView>
 
                         </LinearLayout>
 
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text=""></TextView>
+
+                        <TextView
+                            android:id="@+id/tv_bateria"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="-"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text=""></TextView>
+                    </LinearLayout>
                 </LinearLayout>
                 <!--Z-->
                 <!--K-->
@@ -158,7 +229,15 @@
                         app:srcCompat="@drawable/imgsensores">
 
                     </ImageView>
+                    <android.support.v4.widget.Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
 
+
+
+                    </android.support.v4.widget.Space>
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -175,21 +254,60 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:text="Cantidad de Sensores: ">
+                                android:fontFamily="@font/raleway_black"
+                                android:text="Informacion Sensores ">
 
                             </TextView>
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="1"
-                                android:text="Tipos de Sensores: "></TextView>
 
-                            <TextView
+                            <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="0dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
-                                android:text="Sensores con Problemas: "></TextView>
+                                android:orientation="vertical">
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/raleway_black"
+                                    android:text="Sensores ">
+
+                                </TextView>
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Cantidad de Sensores: ">
+
+                                </TextView>
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Tipos de Sensores: "></TextView>
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Sensores sin Problemas: "></TextView>
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Sensores con Problemas: "></TextView>
+
+
+                            </LinearLayout>
 
 
                         </LinearLayout>
@@ -197,6 +315,46 @@
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text=""></TextView>
+
+                        <TextView
+                            android:id="@+id/tv_cantidadSensores"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="1"></TextView>
+
+                        <TextView
+                            android:id="@+id/tv_tiposensores"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="2"></TextView>
+
+                        <TextView
+                            android:id="@+id/tv_sensoresconproblemas"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="3"></TextView>
+
+                        <TextView
+                            android:id="@+id/tv_sensoressinproblemas"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="4"></TextView>
+                    </LinearLayout>
                 </LinearLayout>
                 <!--Z-->
 
