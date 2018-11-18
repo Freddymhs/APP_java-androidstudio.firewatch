@@ -1,6 +1,10 @@
 package com.example.hyliann.firewatchdesarrollo;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -9,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -16,6 +21,7 @@ import java.util.ArrayList;
 import com.example.hyliann.firewatchdesarrollo.adapters.HumedadAdapter;
 import com.example.hyliann.firewatchdesarrollo.adapters.HumoAdapter;
 import com.example.hyliann.firewatchdesarrollo.adapters.TemperaturaAdapter;
+import com.example.hyliann.firewatchdesarrollo.fragments.HistorialFragment;
 
 public class HOME_Monitorizar extends AppCompatActivity {
 
@@ -33,16 +39,19 @@ public class HOME_Monitorizar extends AppCompatActivity {
         SetListHumo();
         SetListHumedad();
         SetListTemperatura();
-        //toolbar= (Toolbar) findViewById(R.id.toolbar);//BUG CRASH APP!!!!!!!!!!!!!!
+        //toolbar= (Toolbar) findViewById(R.id.toolbar_buscar);//BUG CRASH APP sino qita la toolbar por defecto!!!!!!!!!!!!!!
         //setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Monitorizar");
+        //getSupportActionBar().setSubtitle("Buscando");
+        //getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_HOME_AS_UP | ActionBar.DISPLAY_SHOW_TITLE);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        //toolbar_buscar= (Toolbar) findViewById(R.id.toolbar_buscar);
+
         MenuInflater inflater = getMenuInflater();
-        getMenuInflater().inflate(R.menu.buscar_item,menu);//set_xml
-        //toolbar_buscar.inflateMenu(R.menu.buscar_item);
+        inflater.inflate(R.menu.buscar_item,menu);//set_xml
         MenuItem menuItem=menu.findItem(R.id.item_buscar);//get desde xml
         SearchView searchView= (SearchView) menuItem.getActionView();
         searchView.setQueryHint("Buscar");
@@ -94,4 +103,22 @@ public class HOME_Monitorizar extends AppCompatActivity {
         TemperaturaAdapter temperaturaAdapter=new TemperaturaAdapter(sectores_temperatura);
         rv_temperatura.setAdapter(temperaturaAdapter);
     }
+
+    /*
+
+    public void ListarHumo(View view) {
+        FragmentManager fragmentManager=getFragmentManager();
+        Fragment fragment=fragmentManager.findFragmentByTag("historial");
+        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+        if(fragment==null){
+            fragment=new HistorialFragment();
+            fragmentTransaction.add(R.id.test,fragment,"historial");//testing...
+            //fragmentTransaction.replace(R.id.ly_historial,fragment,"historial");
+        }else {
+            fragmentTransaction.remove(fragment);
+        }
+        fragmentTransaction.commit();
+    }
+
+    */
 }
