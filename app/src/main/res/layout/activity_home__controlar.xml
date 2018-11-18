@@ -4,92 +4,162 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:layout_gravity="center"
     android:background="@color/colorfondo"
-    android:orientation="vertical"
-    tools:context=".HOME_Controlar">
 
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    tools:context=".HOME_Controlar">
+    <!--inicio-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="20dp"
-        android:layout_weight="4">
+        android:layout_weight="0.4"
+
+        android:background="@color/colorfondo">
+
+
+    </LinearLayout>
+    <!--//principal  ALTO-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
 
+            android:layout_weight="0.4"
+            android:background="@color/colorfondo">
 
+        </LinearLayout>
+        <!--//principal  ANCHO-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
             android:background="@color/colorseccion"
             android:orientation="vertical">
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="4">
-                <!--MAPA-->
+                android:layout_weight="2.3"
+                android:background="@color/colorseccion"
+                android:orientation="horizontal">
+                <!--logo-->
+
 
                 <com.mapbox.mapboxsdk.maps.MapView
                     android:id="@+id/mapView"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     mapbox:mapbox_cameraTargetLat="-32.747147"
                     mapbox:mapbox_cameraTargetLng="-70.726204"
                     mapbox:mapbox_cameraZoom="13"
                     mapbox:mapbox_styleUrl="mapbox://styles/hylian/cjof33dw932zc2sp5w9ckszqj" />
                 <!--FIN MAPA LAYOUT-->
 
+
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:background="@color/colorseccion"
+                android:orientation="horizontal"></LinearLayout>
 
             <LinearLayout
 
-                android:paddingTop="17dp"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_marginLeft="7dp"
-                android:layout_marginRight="7dp"
-                android:layout_weight="1"
-
+                android:layout_weight="0.4"
+                android:background="@color/colorfondo"
                 android:orientation="horizontal">
+                <!--boton-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:background="@color/colorseccion">
+
+                </LinearLayout>
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0.9"
                     android:background="@color/colorboton"
+                    android:text="AnteriorEstacion"
 
-                    android:text="AnteriorEstacion">
+                    >
 
                 </Button>
 
-                <Space
-                    android:layout_width="6dp"
-                    android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.08"
+                    android:background="@color/colorseccion">
 
-                </Space>
+                </LinearLayout>
+
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
 
-                    android:layout_weight="1"
+                    android:layout_weight="0.9"
                     android:background="@color/colorboton"
                     android:text="siguiente estacion">
 
                 </Button>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:background="@color/colorseccion">
+
+                </LinearLayout>
+
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.16"
+                android:background="@color/colorseccion"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:background="@color/colorfondo">
 
         </LinearLayout>
     </LinearLayout>
 
-    <Space
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="3"
         android:background="@color/colorfondo">
 
-    </Space>
+    </LinearLayout>
 
+
+    <!--fin-->
 </LinearLayout>
+
+
 
 
