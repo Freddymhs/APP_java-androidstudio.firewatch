@@ -1,10 +1,19 @@
 package com.example.hyliann.firewatchdesarrollo;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
 
+import com.example.hyliann.firewatchdesarrollo.fragments.HistorialFragment;
 import com.mapbox.mapboxsdk.Mapbox;
 import com.mapbox.mapboxsdk.maps.MapView;
 
@@ -27,6 +36,25 @@ public class HOME_Controlar extends AppCompatActivity {
         mapView.onCreate(savedInstanceState);//
         //MAPA
 
+    }
+    //Toolbar
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();//1
+        inflater.inflate(R.menu.barra_item, menu); // 2
+        return super.onCreateOptionsMenu(menu);
+    }
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.item_home:
+                Intent intent=new Intent(this,Activity_Home_.class);
+                startActivity(intent);
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     //////metodos para el mapa
@@ -71,6 +99,7 @@ public class HOME_Controlar extends AppCompatActivity {
         super.onDestroy();
         mapView.onDestroy();
     }
+
     /////////////////metodos para el mapa
 
 

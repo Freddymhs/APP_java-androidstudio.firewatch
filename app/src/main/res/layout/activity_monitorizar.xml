@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E4E4E4"
     android:orientation="vertical"
+    android:background="@color/colorfondo"
     tools:context=".HOME_Monitorizar">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar_buscar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        ></android.support.v7.widget.Toolbar>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -42,7 +34,8 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
-                        android:text="Humo" />
+                        android:text="Humo"
+                        />
 
                     <android.support.v7.widget.RecyclerView
                         android:id="@+id/rv_humo"

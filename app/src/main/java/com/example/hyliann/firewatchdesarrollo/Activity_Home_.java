@@ -155,7 +155,6 @@ public class Activity_Home_ extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) { //0
         MenuInflater inflater = getMenuInflater();//1
         inflater.inflate(R.menu.barra_item, menu); // 2
-
         return super.onCreateOptionsMenu(menu);
     }
 
