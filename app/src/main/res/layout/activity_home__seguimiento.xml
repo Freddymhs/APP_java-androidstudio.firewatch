@@ -192,7 +192,7 @@
                     android:drawableRight="@android:drawable/ic_menu_more"
                     android:gravity="center_vertical"
                     android:text="historial"
-
+                    android:onClick="MostrarHistorial"
                     ></Button>
 
                 <LinearLayout
@@ -204,7 +204,6 @@
 
 
                     ></LinearLayout>
-                //layout?
 
             </LinearLayout>
 
@@ -222,10 +221,12 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/ly_historial"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.3333"
-        android:background="@color/colorfondo">
+        android:layout_height="wrap_content"
+        android:background="@color/colorfondo"
+        android:orientation="vertical"
+        >
 
     </LinearLayout>
 

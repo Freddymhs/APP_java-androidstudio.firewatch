@@ -44,7 +44,7 @@ public class HOME_Controlar extends AppCompatActivity {
         inflater.inflate(R.menu.barra_item, menu); // 2
         return super.onCreateOptionsMenu(menu);
     }
-    
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){

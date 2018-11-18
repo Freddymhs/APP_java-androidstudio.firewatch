@@ -9,9 +9,34 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:text="SADAS"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="SADAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="SADAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="SADAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="SADAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="SADAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
 
 
 
