@@ -9,21 +9,27 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+
+import com.example.hyliann.firewatchdesarrollo.clases.Arduino;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    ArrayList<Arduino> dispositivos=new ArrayList<>();//asignarle a otra clase contenedora de dispositivos....
+    ListView lv_dispositivos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); /// orientacion fija
-
-
 //        requestWindowFeature(Window.FEATURE_NO_TITLE); //remove App Title bar
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        lv_dispositivos = (ListView) findViewById(R.id.lv_dispositivos);
+        AgregarDispositivos();
 
     }
 
@@ -67,5 +73,19 @@ public class MainActivity extends AppCompatActivity {
         );
 
         return alertDialog;
+    }
+    //fixear para mostrar solo el nombre de los dispositivos en la lista...
+    void AgregarDispositivos(){
+        dispositivos.add(new Arduino("Arduino1"));
+        dispositivos.add(new Arduino("Arduino2"));
+        dispositivos.add(new Arduino("Arduino3"));
+        dispositivos.add(new Arduino("Arduino7"));
+        dispositivos.add(new Arduino("Rasperri3.14"));
+        dispositivos.add(new Arduino("Unknown"));
+        dispositivos.add(new Arduino("Glados"));
+        dispositivos.add(new Arduino("Talos"));
+
+        ArrayAdapter<Arduino> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, dispositivos);
+        lv_dispositivos.setAdapter(adapter);
     }
 }

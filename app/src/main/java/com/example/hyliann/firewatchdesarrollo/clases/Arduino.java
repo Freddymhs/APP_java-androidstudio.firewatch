@@ -23,6 +23,29 @@ public class Arduino {
     //los sensores detectados y setear sus rangos de deteccion
 
     //constructores
+
+
+    public Arduino() {
+
+    }
+
+    public Arduino(String nombreDelDispositivoDESIGNADO) {
+        this.nombreDelDispositivoDESIGNADO = nombreDelDispositivoDESIGNADO;
+        this.codigoBlueDESIGNADO = "888888888";
+        this.velocidadDESIGNADO = 0; // detenidos todos los dispositivos por default
+        this.numeroAlertaDESIGNADO = "+958020188";
+        this.bateriaDaparato = new Bateria(100);
+    }
+
+    public Arduino(Bateria bateriaDaparato, ArrayList<Sensor> sensoresDaparato) {
+        this.nombreDelDispositivoDESIGNADO = "DISPOSITIVO #1";
+        this.codigoBlueDESIGNADO = "888888888";
+        this.velocidadDESIGNADO = 0; // detenidos todos los dispositivos por default
+        this.numeroAlertaDESIGNADO = "+958020188";  //
+        this.bateriaDaparato = bateriaDaparato;
+        SensoresDaparato = sensoresDaparato;
+    }
+
     public Arduino(String nombreDelDispositivoDESIGNADO, String codigoBlueDESIGNADO, int velocidadDESIGNADO, String numeroAlertaDESIGNADO, Bateria bateriaDaparato, ArrayList<Sensor> sensoresDaparato) {
         this.nombreDelDispositivoDESIGNADO = "DISPOSITIVO #1";
         this.codigoBlueDESIGNADO = "888888888";
