@@ -224,6 +224,7 @@
         android:id="@+id/ly_historial"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0.333"
         android:background="@color/colorfondo"
         android:orientation="vertical"
         >
