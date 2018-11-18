@@ -16,6 +16,11 @@ public class Arduino {
     private Bateria bateriaDaparato;   // un objeto BATERIA que es parte de clase "arduino"                -CLASE objeto
     private ArrayList<Sensor> SensoresDaparato; //un arraylist SENSORES que es parte de clase"arduino"     -CLASE objeto array
 
+///pantalla de setter usuario
+    //nombre asignado al arduino
+    //codigo bluethot asignado pero no se ense;a ssolo se avisa
+    //numero de alerta para llamar al celular
+    //los sensores detectados y setear sus rangos de deteccion
 
     //constructores
     public Arduino(String nombreDelDispositivoDESIGNADO, String codigoBlueDESIGNADO, int velocidadDESIGNADO, String numeroAlertaDESIGNADO, Bateria bateriaDaparato, ArrayList<Sensor> sensoresDaparato) {
@@ -28,7 +33,7 @@ public class Arduino {
 
     }
 
-
+//-
     ///
 
     //getters setters
