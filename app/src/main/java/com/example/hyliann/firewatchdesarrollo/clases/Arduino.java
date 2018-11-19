@@ -107,4 +107,9 @@ public class Arduino {
     public void setSensoresDaparato(ArrayList<Sensor> sensoresDaparato) {
         SensoresDaparato = sensoresDaparato;
     }
+
+    @Override
+    public String toString() {
+        return this.nombreDelDispositivoDESIGNADO;
+    }
 }
